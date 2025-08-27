@@ -49,15 +49,15 @@
             <div
               class="flex justify-between items-center gap-2 bg-[#F5FFF6] px-4 w-[80px] md:w-25 h-10 rounded-full"
             >
-              <span class="text-black font-bold">0</span>
+              <span class="text-black font-bold" id="coin-count">100</span>
               <img src="./assets/coin.png" alt="" class="h-6" />
             </div>
           </div>
           <div class="flex gap-4">
-            <div
-              class="flex justify-between items-center gap-2 bg-[#00A63E] font-bold text-white px-4 w-[80px] md:w-25 h-10 rounded-full"
+            <div "
+              class=" flex justify-between items-center gap-2 bg-[#00A63E] font-bold text-white px-4 w-[80px] md:w-25 h-10 rounded-full"
             >
-              <span>0</span>
+              <span id="copy-count">0</span>
               <p class="text-sm md:text-base">Copy</p>
             </div>
           </div>
@@ -81,7 +81,10 @@
         </div>
       </div>
     </header>
-    <main class="grid grid-cols-12 gap-4 w-11/12 items-start mx-auto mt-20">
+    <main
+      id="product"
+      class="grid grid-cols-12 gap-4 w-11/12 items-start mx-auto mt-20"
+    >
       <!-- Left section -->
       <section class="col-span-12 lg:col-span-9">
         <div
@@ -105,7 +108,7 @@
               <img
                 src="./assets/heart.png"
                 alt="Heart"
-                class="h-6 w-6 sm:h-8 sm:w-8"
+                class="heart h-6 w-6 sm:h-8 sm:w-8"
               />
             </div>
 
@@ -123,12 +126,13 @@
               <!-- Buttons -->
               <div class="flex gap-2 mt-2">
                 <button
-                  class="flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
+                  class="copy-btn flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
                 >
                   Copy
                 </button>
                 <button
-                  class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
+                  id="button"
+                  class="card-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -154,7 +158,7 @@
               <img
                 src="./assets/heart.png"
                 alt="Heart"
-                class="h-6 w-6 sm:h-8 sm:w-8"
+                class="heart h-6 w-6 sm:h-8 sm:w-8"
               />
             </div>
 
@@ -168,12 +172,12 @@
               <!-- Buttons -->
               <div class="flex gap-2 mt-2">
                 <button
-                  class="flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
+                  class="copy-btn flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
                 >
                   Copy
                 </button>
                 <button
-                  class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
+                  class="card-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -198,7 +202,7 @@
               <img
                 src="./assets/heart.png"
                 alt="Heart"
-                class="h-6 w-6 sm:h-8 sm:w-8"
+                class="heart h-6 w-6 sm:h-8 sm:w-8"
               />
             </div>
 
@@ -214,12 +218,12 @@
               <!-- Buttons -->
               <div class="flex gap-2 mt-2">
                 <button
-                  class="flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
+                  class="copy-btn flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
                 >
                   Copy
                 </button>
                 <button
-                  class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
+                  class="card-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -244,7 +248,7 @@
               <img
                 src="./assets/heart.png"
                 alt="Heart"
-                class="h-6 w-6 sm:h-8 sm:w-8"
+                class="heart h-6 w-6 sm:h-8 sm:w-8"
               />
             </div>
 
@@ -260,12 +264,12 @@
               <!-- Buttons -->
               <div class="flex gap-2 mt-2">
                 <button
-                  class="flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
+                  class="copy-btn flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
                 >
                   Copy
                 </button>
                 <button
-                  class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
+                  class="card-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -290,7 +294,7 @@
               <img
                 src="./assets/heart.png"
                 alt="Heart"
-                class="h-6 w-6 sm:h-8 sm:w-8"
+                class="heart h-6 w-6 sm:h-8 sm:w-8"
               />
             </div>
 
@@ -308,12 +312,12 @@
               <!-- Buttons -->
               <div class="flex gap-2 mt-2">
                 <button
-                  class="flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
+                  class="copy-btn flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
                 >
                   Copy
                 </button>
                 <button
-                  class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
+                  class="card-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -338,7 +342,7 @@
               <img
                 src="./assets/heart.png"
                 alt="Heart"
-                class="h-6 w-6 sm:h-8 sm:w-8"
+                class="heart h-6 w-6 sm:h-8 sm:w-8"
               />
             </div>
 
@@ -352,12 +356,12 @@
               <!-- Buttons -->
               <div class="flex gap-2 mt-2">
                 <button
-                  class="flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
+                  class="copy-btn flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
                 >
                   Copy
                 </button>
                 <button
-                  class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
+                  class="card-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -382,7 +386,7 @@
               <img
                 src="./assets/heart.png"
                 alt="Heart"
-                class="h-6 w-6 sm:h-8 sm:w-8"
+                class="heart h-6 w-6 sm:h-8 sm:w-8"
               />
             </div>
 
@@ -400,12 +404,12 @@
               <!-- Buttons -->
               <div class="flex gap-2 mt-2">
                 <button
-                  class="flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
+                  class="copy-btn flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
                 >
                   Copy
                 </button>
                 <button
-                  class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
+                  class="card-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -419,7 +423,7 @@
             <!-- Top-left logo -->
             <div class="absolute top-4 left-4 bg-red-100 p-2 rounded-lg">
               <img
-                src="./assets/emergency.png"
+                src="./assets/brac.png"
                 alt="Alert Logo"
                 class="h-8 w-8 sm:h-10 sm:w-10"
               />
@@ -430,7 +434,7 @@
               <img
                 src="./assets/ambulance.png"
                 alt="Heart"
-                class="h-6 w-6 sm:h-8 sm:w-8"
+                class="heart h-6 w-6 sm:h-8 sm:w-8"
               />
             </div>
 
@@ -446,12 +450,12 @@
               <!-- Buttons -->
               <div class="flex gap-2 mt-2">
                 <button
-                  class="flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
+                  class="copy-btn flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
                 >
                   Copy
                 </button>
                 <button
-                  class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
+                  class="card-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -465,7 +469,7 @@
             <!-- Top-left logo -->
             <div class="absolute top-4 left-4 bg-red-100 p-2 rounded-lg">
               <img
-                src="./assets/ambulance.png"
+                src="./assets/Bangladesh-Railway.png"
                 alt="Alert Logo"
                 class="h-8 w-8 sm:h-10 sm:w-10"
               />
@@ -476,7 +480,7 @@
               <img
                 src="./assets/heart.png"
                 alt="Heart"
-                class="h-6 w-6 sm:h-8 sm:w-8"
+                class="heart h-6 w-6 sm:h-8 sm:w-8"
               />
             </div>
 
@@ -494,12 +498,12 @@
               <!-- Buttons -->
               <div class="flex gap-2 mt-2">
                 <button
-                  class="flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
+                  class="copy-btn flex-1 border border-gray-300 text-gray-700 py-2 rounded hover:bg-gray-100 text-sm sm:text-base"
                 >
                   Copy
                 </button>
                 <button
-                  class="flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
+                  class="card-btn flex-1 flex justify-center items-center gap-2 bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm sm:text-base"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -508,38 +512,88 @@
           </div>
         </div>
       </section>
-<!-- Right side aside -->
+      <!-- Right side -->
       <aside class="col-span-12 lg:col-span-3 bg-white w-full">
-  <!-- Heading -->
-  <div class="heading flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 p-4">
-    <div class="left flex items-center gap-2 font-bold text-gray-800">
-      <i class="fa-regular fa-clock"></i>
-      <h1 class="text-base md:text-lg">Call History</h1>
-    </div>
-    <div class="righ mt-2 sm:mt-0">
-      <div
-        class="flex justify-center items-center gap-2 bg-[#00A63E] font-bold text-white px-3 md:px-4 py-2 w-fit rounded-full text-sm md:text-base"
-      >
-        <span>0</span>
-        <p>Copy</p>
-      </div>
-    </div>
-  </div>
+        <!-- Heading -->
+        <div
+          class="heading flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 p-4"
+        >
+          <div class="left flex items-center gap-2 font-bold text-gray-800">
+            <i class="fa-regular fa-clock"></i>
+            <h1 class="text-base md:text-lg">Call History</h1>
+          </div>
+          <div class="righ mt-2 sm:mt-0">
+            <div
+              class="flex justify-center items-center gap-2 bg-[#00A63E] font-bold text-white px-3 md:px-4 py-2 w-fit rounded-full text-sm md:text-base"
+            >
+              <span>0</span>
+              <p>Copy</p>
+            </div>
+          </div>
+        </div>
 
-  <!-- History Card -->
-  <div
-    class="history-card flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 gap-3 m-4 rounded-xl bg-[#FAFAFA]"
-  >
-    <div class="title">
-      <h1 class="text-sm md:text-base font-semibold">জাতীয় জরুরি সেবা</h1>
-      <p class="text-gray-500 text-xs md:text-sm"><span>999</span></p>
-    </div>
-    <div class="time mt-2 sm:mt-0">
-      <h1 class="text-xs md:text-sm text-gray-600">time</h1>
-    </div>
-  </div>
-</aside>
+        <!-- History Card -->
+        <div id="history-card">
 
+        </div>
+      </aside>
     </main>
+
+    <script>
+      function getElement(id) {
+        const element = document.getElementById(id);
+        return element;
+      }
+
+      
+      const cardBtns = document.getElementsByClassName("card-btn");
+      for (const cardBtn of cardBtns) {
+        cardBtn.addEventListener("click", function () {
+          const coinCount = getElement("coin-count").innerText;
+          const title = cardBtn.parentNode.parentNode.children[0].innerText;
+          const subTitle = cardBtn.parentNode.parentNode.children[1].innerText;
+          const number = cardBtn.parentNode.parentNode.children[2].innerText;
+         
+          if (coinCount > 0) {
+            const TotalCoinCount = parseInt(coinCount) - 20;
+            getElement("coin-count").innerText = TotalCoinCount;
+             alert(` calling ${subTitle} ${number}` )
+             const historyCardContainer = getElement("history-card");
+          const historyCard = document.createElement("div");
+          historyCard.innerHTML= `<div
+          class="history-card flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 gap-3 m-4 rounded-xl bg-[#FAFAFA]"
+        >
+          <div class="title">
+            <h1 class="text-sm md:text-base font-semibold">
+            ${title}
+            </h1>
+            <p class="text-gray-500 text-xs md:text-sm"><span>${number}</span></p>
+          </div>
+          <div class="time mt-2 sm:mt-0">
+            <h1 class="text-xs md:text-sm text-gray-600">${new Date().toLocaleTimeString()}</h1>
+          </div>
+        </div>`
+        historyCardContainer.append(historyCard)
+          } else {
+            alert("Insufficient coins");
+          }
+        });
+      }
+     
+      const copyBtns = document.getElementsByClassName("copy-btn");
+      for (const copyBtn of copyBtns) {
+        copyBtn.addEventListener("click", function () {
+          const number =
+            copyBtn.parentNode.parentNode.children[2].innerText;
+          navigator.clipboard.writeText(number);
+          const copyCount = getElement("copy-count").innerText;
+          alert(`নম্বরটি কপি করা হয়েছে ${number} `);
+          
+          const TotalCopyCount = parseInt(copyCount) + 1;
+          getElement("copy-count").innerText = TotalCopyCount;
+        });
+      }
+      
+    </script>
   </body>
 </html>
