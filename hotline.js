@@ -3,8 +3,18 @@
         const element = document.getElementById(id);
         return element;
       }
+      // for heart functionality
+      const heartImgs= document.getElementsByClassName("heart");
+      for(const heartImg of heartImgs ){
+            heartImg.addEventListener("click", function(){
+                const heartCount= getElement("heart-count").innerText;
+                const  totalHeartCount=Number(heartCount)+1;
+                getElement("heart-count").innerText=totalHeartCount;
+                
+            })
+      }
 
-      
+      // for call functionality
       const cardBtns = document.getElementsByClassName("card-btn");
       for (const cardBtn of cardBtns) {
         cardBtn.addEventListener("click", function () {
@@ -38,7 +48,8 @@
           }
         });
       }
-     
+
+      // for copy functionality
       const copyBtns = document.getElementsByClassName("copy-btn");
       for (const copyBtn of copyBtns) {
         copyBtn.addEventListener("click", function () {
