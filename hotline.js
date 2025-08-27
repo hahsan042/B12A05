@@ -26,7 +26,7 @@
           if (coinCount > 0) {
             const TotalCoinCount = parseInt(coinCount) - 20;
             getElement("coin-count").innerText = TotalCoinCount;
-             alert(` calling ${subTitle} ${number}` )
+             alert(` Calling ${subTitle} ${number}` )
              const historyCardContainer = getElement("history-card");
           const historyCard = document.createElement("div");
           historyCard.innerHTML= `<div
@@ -44,7 +44,7 @@
         </div>`
         historyCardContainer.append(historyCard)
           } else {
-            alert("Insufficient coins");
+            alert(" আপনার একাউন্টে পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে ২০ কয়েন প্রয়োজন।");
           }
         });
       }
@@ -63,5 +63,11 @@
           getElement("copy-count").innerText = TotalCopyCount;
         });
       }
+      // clear history
       
+      const cardContainer =getElement("card-container");
+      cardContainer.addEventListener("click",function(){
+        const historyCardContainer=getElement("history-card");
+        historyCardContainer.innerHTML="";
+      })
  
